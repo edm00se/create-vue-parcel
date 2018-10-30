@@ -1,0 +1,24 @@
+{
+  "name": "create-vue-parcel",
+  "version": "0.9.0",
+  "description": "an npm initializer for a vue.js app with parcel",
+  "bin": {
+    "create-vue-parcel": "cli.js"
+  },
+  "keywords": [
+    "vue",
+    "parcel",
+    "initializer"
+  ],
+  "author": "Eric McCormick (https://edm00se.codes/)",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "2.4.1",
+    "cross-spawn": "6.0.5",
+    "fs-extra": "7.0.0",
+    "meow": "5.0.0"
+  },
+  "scripts": {
+    "format": "npx prettier --single-quote --write \"*.js\""
+  }
+}

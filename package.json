@@ -1,6 +1,6 @@
 {
   "name": "create-vue-parcel",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "an npm initializer for a vue.js app with parcel",
   "bin": {
     "create-vue-parcel": "cli.js"

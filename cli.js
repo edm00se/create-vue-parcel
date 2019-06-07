@@ -13,7 +13,6 @@ log.error = (...args) => {
 };
 
 const template = 'edm00se/vue-parcel-starter';
-const templateDepth = 1;
 
 const cli = meow(
   `
@@ -46,7 +45,7 @@ if (!name) {
 }
 
 if (!fs.existsSync(name)) {
-  initit({ name, template, templateDepth })
+  initit({ name, template })
     .then(res => {
       log('created vue-parcel app');
       process.exit(0);

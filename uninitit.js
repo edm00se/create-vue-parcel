@@ -1,4 +1,7 @@
-// https://github.com/c8r/initit/pull/4
+/*
+ * A self-bundled copy of a customized version of initit,
+ * due to: https://github.com/c8r/initit/issues/3
+ */
 const fs = require('fs-extra');
 const path = require('path');
 const os = require('os');
@@ -27,7 +30,7 @@ const gitInit = () => {
   exec('git commit -am "Init"', { stdio: 'inherit' });
   return true;
 };
-const getTar = ({ user, repo, path = '', name, depth = 3 }) => {
+const getTar = ({ user, repo, path = '', name, depth }) => {
   const url = `https://codeload.github.com/${user}/${repo}/tar.gz/master`;
   const cmd = `curl ${url} | tar -xz -C ${name} --strip=${depth} ${repo}-master/${path}`;
   exec(cmd, { stdio: 'inherit' });
@@ -47,7 +50,8 @@ const create = async (opts = {}) => {
   const dirname = path.resolve(opts.name);
   const name = path.basename(dirname);
   const [user, repo, ...paths] = opts.template.split('/');
-  const depth = opts.templateDepth;
+  const depth = paths.length+1;
+  console.log(`depth (paths.length): ${depth}`);
 
   fs.ensureDirSync(name);
 

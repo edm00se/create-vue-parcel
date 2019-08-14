@@ -26,7 +26,7 @@ This generates a copy of [edm00se/vue-parcel-starter](https://github.com/edm00se
 Inspired by:
 
 - [`generator-kcd-oss`](https://github.com/kentcdodds/generator-kcd-oss)
-- [`create-deck`](https://github.com/jxnblk/mdx-deck/tree/master/create-deck)
+- [`create-deck`](https://github.com/jxnblk/mdx-deck/tree/master/packages/create-deck)
 
 ## License
 

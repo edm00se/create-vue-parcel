@@ -16,7 +16,7 @@
     "chalk": "^4.0.0",
     "cross-spawn": "7.0.3",
     "fs-extra": "^10.0.0",
-    "meow": "10.1.0"
+    "meow": "10.1.1"
   },
   "scripts": {
     "format": "npx prettier --single-quote --write \"*.js\""
